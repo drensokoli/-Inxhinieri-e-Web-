@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    background: #222;
+    font-family: ;
+    font-weight: 300;
+    font-family: 'Work Sans' sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #EFB926;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo{
+    float:left;
+    max-width: 7%;
+    padding: 10px 0;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+}
