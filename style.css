@@ -32,14 +32,7 @@ header {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    overflow: hidden;
 }
-
-/* header::after{
-    content: '';
-    display: table;
-    clear: both;
-} */
 
 .logo{
     float:left;
@@ -48,8 +41,12 @@ header {
 }
 
 nav{
-    float: right;
+    /* width: 100%; */
+    text-align: center;
+}
 
+nav .button{
+    display: inline-block;
 }
 
 nav ul{
@@ -60,7 +57,7 @@ nav ul{
 
 nav li{
     display: inline-block;
-    margin-left: 70px;
+    margin-left: 50px;
     padding-top: 50px;
     position: relative;
 }
@@ -69,7 +66,7 @@ nav a{
     color: black;
     text-decoration: none;
     /* text-transform: uppercase; */
-    font-size: 27px;
+    font-size: 20px;
     padding-top: 100px;
 }
 
@@ -96,6 +93,47 @@ nav a:hover:before{
     width:100%;
 } */
 
+
+
+.button1 {
+    border: none;
+    border-radius: 7px;
+    background-color: #48C8F3;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 7px 20px;
+    text-align: center;
+
+    position: relative;
+    
+
+}
+
+ul, .button{
+    display: inline-block;
+}
+
+.button{
+    margin-right: 10px;
+    margin-top: 2.5%;
+    float: right;
+}
+
+.button1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.button1:hover{
+    background: black;
+    transition: all ease-in-out 100ms;
+}
+
+.location{
+    background-color: red;
+    height: 100vh;
+}
+
 .main{
     /* position: relative; */
 }
@@ -108,37 +146,15 @@ nav a:hover:before{
 }
 
 .main-background{
-    height:100vh;
+    height:160vh;
     background-size: cover;
-    background-image: url('background1.png');
+    background-image: url('backhground5.jpg');
 }
 
-.button1 {
-    border: none;
-    border-radius: 16px;
-    background-color: #48C8F3;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 25px;
-    margin: 4px 2px;
-    cursor: pointer;
-	margin-left: 47%;
-    margin-top: 35%;
-}
 
-.button1 a{
-    /* font-family: "Roboto", sans-serif; */
-    text-decoration: none;
+.eat {
     color: white;
-}
-
-.button1 a:hover{
-    border-bottom: 3px solid white;
-    transition: all ease-in-out 150ms;
-}
-
-.location{
-    background-color: red;
-    height: 100vh;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
 }
