@@ -13,7 +13,9 @@ body{
 .form{
     position: relative;
     z-index: 1;
-    background: white;
+    background: rgba(255, 204, 0, 0.8);
+
+    /* background: white; */
     max-width: 360px;
     margin: 0 auto;
     padding: 45px;
@@ -30,6 +32,35 @@ body{
     padding: 15px;
     box-sizing: border-box;
     font-size: 14px;
+}
 
+.form button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFF;
+    font-size: 14px;
+    cursor: pointer;
+}
 
+.form button:hover,.form button:active{
+    background: #4CAB;
+}
+
+.form .message{
+    margin: 15px 0;
+    color:lightcyan;
+}
+
+.form .message a{
+    text-decoration: none;
+    color:darkblue;
+}
+
+.form .register-form{
+    display: none;
 }
