@@ -6,43 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register and log in</title>
     <link rel="stylesheet" href="loginstyle.css">
+    
 </head>
 <body>
+
     <div class="login-page">
         <div class="form">
             <form class="register-form">
                 
-                <input type="text" placeholder="Emri"/>
-                <input type="text" placeholder="Mbiemri"/>
-                <input type="text" placeholder="Emri i përdoruesit"/>
-                <input type="text" placeholder="Email"/>
-                <input type="text" placeholder="Fjalëkalimi"/>
-                <input type="text" placeholder="Konfirmoni fjalëkalimin"/>
+                <input type="text" id="emri" placeholder="Emri" required/>
+                <input type="text" id="mbiemri" placeholder="Mbiemri" required/>
+                <input type="text" id="perdoruesi" placeholder="Emri i përdoruesit" required/>
+                <input type="text" id="email" placeholder="Email" required/>
+                <input type="text" id="password" placeholder="Fjalëkalimi" required/>
+                <input type="text" id="pw_confirm" placeholder="Konfirmoni fjalëkalimin" required/>
                 
+                <ul class="helper-text">
+                    <li class="length">Fjalëkalimi duhet të ketë së paku 8 karaktere, një shkronjë të madhe dhe një numër.</li>
+                </ul>
             
-            <button>Regjistrohuni</button>
+            <button id="rgstr_btn" type="submit" value="Register" onclick="store()">Regjistrohuni</button>
             <p class="message">Jeni të regjistruar? <a href="#">Kyçu</a></p>
             </form>
 
-            <form class="">
-                <input type="text" placeholder="Emri i përdoruesit"/>
-                <input type="text" placeholder="Fjalëkalimi"/>
-                <button>Kyçu</button>
+            <form class="login-form">
+                <input type="text" id="PERDORUESI" placeholder="Emri i përdoruesit" required/>
+                <input type="text" id="PASSWORD" placeholder="Fjalëkalimi"/>
+                <button id= "login_btn" type="submit" value="Login" onclick="check()">Kyçu</button>
                 <p class="message">S'jeni të regjistruar? <a href="#">Regjistrohuni</a></p>
+
                 
             </form>
         </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script>
-        $('.message a').click(function(){
-        $('form').animate({height:"toggle", opacity:"toggle"}, "slow");
-        });
-
-    </script>
-
+    <script src="index.js"></script>    
 
 </body>
 </html>
