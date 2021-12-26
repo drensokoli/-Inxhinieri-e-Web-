@@ -19,6 +19,7 @@ body{
     max-width: 360px;
     margin: 0 auto;
     padding: 45px;
+    text-align: center;
 }
 
 .form input{
@@ -61,9 +62,5 @@ body{
 }
 
 .form .register-form{
-    display: none;
-}
-
-.message{
-    text-align: center;
+    display: noe;
 }
