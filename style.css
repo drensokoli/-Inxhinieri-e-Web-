@@ -386,3 +386,11 @@ ul, .button{
       color: whitesmoke;
       text-align: center;
   }
+
+  .creator{
+    text-align: center;
+  }
+
+  .creator_item{
+    display: inline-block;
+  }
