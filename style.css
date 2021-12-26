@@ -388,8 +388,9 @@ ul, .button{
   }
 
   .creator{
-    text-align: center;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;  }
 
   .creator_item{
     display: inline-block;
