@@ -56,6 +56,8 @@ $('.message a').click(function(){
     $('form').animate({height:"toggle", opacity:"toggle"}, "slow");
     });
 
+
+
 function store(){
     var emri = document.getElementById('emri');
     var mbiemri = document.getElementById('mbiemri');
@@ -70,7 +72,7 @@ function store(){
         alert('Fjalëkalimi duhet të përmbajë së paku një numër');
     }else if(!password.value.match(/[A-Z]/)){
         alert('Fjalëkalimi duhet të përmbajë së paku një shkronjë të madhe');
-    }else if(!password.value == pw_confirm.value){
+    }else if(!(password.value == pw_confirm.value)){
         alert('Fjalëkalimi që keni shkruar nuk përputhet')
     }else{
         localStorage.setItem('perdoruesi', perdoruesi.value);
