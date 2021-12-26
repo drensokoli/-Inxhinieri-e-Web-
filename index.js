@@ -89,10 +89,11 @@ function check(){
 
     if(PERDORUESI.value == storedName && PASSWORD.value == storedPw){
         localStorage.setItem('loggedInUser', perdoruesi)
-        document.getElementById("login_btn").onclick = function () {
-            location.href = "index.html";
-        };
-        alert('You are logged in.');
+        // document.getElementById("login_btn").onclick = function () {
+        //     location.href = "index.html";
+        // };
+        alert('Mirësevjen!');
+        location.href = 'index.html';
         
     }else{
         alert('Emri i perdoruesit ose fjalëkalimi janë gabim.');
